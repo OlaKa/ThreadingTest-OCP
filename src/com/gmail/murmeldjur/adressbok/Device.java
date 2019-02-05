@@ -25,7 +25,7 @@ public class Device implements AutoCloseable{
         try(Device d = new Device()){
             d.open();
             d.writeHeader("TEST");
-            d.close();
+            d.close(); //Behövs ej
         }catch(IOException e){
             System.out.println("Got Exception");
         }
